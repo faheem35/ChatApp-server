@@ -8,7 +8,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin:  ["https://unique-caramel-240257.netlify.app/"], 
+    origin:  ["https://unique-caramel-240257.netlify.app"], 
     methods: ["GET", "POST"],
   },
 });
