@@ -8,7 +8,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin:  ["http://localhost:5173", "http://localhost:5174"], // Allow both ports
+    origin:  ["https://unique-caramel-240257.netlify.app/"], 
     methods: ["GET", "POST"],
   },
 });
@@ -42,5 +42,4 @@ server.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
 });
 
-const corsOptions = require("./config/corsConfig");
-app.use(cors(corsOptions));
+
